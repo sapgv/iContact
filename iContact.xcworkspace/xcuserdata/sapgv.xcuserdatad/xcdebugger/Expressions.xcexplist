@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ContactsViewModel.transform(input:):ContactsViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "s">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ContactsViewModel.needToUpdate.getter:ContactsViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Date().timeIntervalSince(lastUpdated) &gt; 60">
+            </PersistentString>
+            <PersistentString
+               value = "Date().timeIntervalSince(lastUpdated)">
+            </PersistentString>
+            <PersistentString
+               value = "Date().timeIntervalSince(lastUpdated) &gt; 60 ? true : false">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ContactsViewModel.transform(input:):ContactsViewModel.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ContactsViewModel.fetch(_:):ContactsViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.needToUpdate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ContactViewController.viewDidLoad():ContactViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "viewModel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in Alert.hide(_:):Alert.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.position">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in ContactsViewModel.fetch():ContactsViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.needToUpdate">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in ContactsViewModel.transform(input:):ContactsViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "contacts[indexPath.row]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

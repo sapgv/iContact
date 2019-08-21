@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" id="KGk-i7-Jjw" customClass="ContactCell" customModule="iContact" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="286" height="63.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="melancholic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53A-mh-YBM">
+                        <rect key="frame" x="186" y="0.0" width="100" height="63.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="09z-It-IOi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foster Mack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7c-3U-VEp">
+                        <rect key="frame" x="8" y="8" width="178" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="3Ga-nd-289"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+7 (851) 576-2251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9S-X8-FaP">
+                        <rect key="frame" x="8" y="37" width="178" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="zed-Xt-fXz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="U9S-X8-FaP" secondAttribute="bottom" constant="5.5" id="3hU-IY-CLQ"/>
+                    <constraint firstItem="U9S-X8-FaP" firstAttribute="top" secondItem="j7c-3U-VEp" secondAttribute="bottom" constant="8" id="Fqv-uO-Ftp"/>
+                    <constraint firstItem="j7c-3U-VEp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="TMO-Q9-3lO"/>
+                    <constraint firstAttribute="bottom" secondItem="53A-mh-YBM" secondAttribute="bottom" id="ZYJ-TK-KiM"/>
+                    <constraint firstItem="53A-mh-YBM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dDZ-xb-Wdk"/>
+                    <constraint firstItem="53A-mh-YBM" firstAttribute="leading" secondItem="j7c-3U-VEp" secondAttribute="trailing" id="imS-vs-0I7"/>
+                    <constraint firstItem="j7c-3U-VEp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="kaL-Ia-Gjy"/>
+                    <constraint firstItem="U9S-X8-FaP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="kd1-Az-roi"/>
+                    <constraint firstItem="53A-mh-YBM" firstAttribute="leading" secondItem="U9S-X8-FaP" secondAttribute="trailing" id="nTH-Bc-RMn"/>
+                    <constraint firstAttribute="trailing" secondItem="53A-mh-YBM" secondAttribute="trailing" id="w24-1d-XRy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="j7c-3U-VEp" id="hOp-fh-Lbf"/>
+                <outlet property="phoneLabel" destination="U9S-X8-FaP" id="vZ3-yo-WrF"/>
+                <outlet property="temperamentLabel" destination="53A-mh-YBM" id="DFg-oZ-psa"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="34.821428571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

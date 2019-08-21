@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NameCell" rowHeight="114" id="sNc-xn-eT1" customClass="NameCell" customModule="iContact" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="114"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sNc-xn-eT1" id="YPZ-0g-aFy">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="113.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donald Russel Clark" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qr1-iA-Bx5">
+                        <rect key="frame" x="16" y="16" width="382" height="29"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13.11.2001 - 29.07.2018" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acg-Iv-Jqf">
+                        <rect key="frame" x="16" y="53" width="382" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choleric" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E25-DF-d45">
+                        <rect key="frame" x="16" y="81.5" width="382" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Acg-Iv-Jqf" secondAttribute="trailing" constant="16" id="3dh-pt-x9J"/>
+                    <constraint firstItem="Acg-Iv-Jqf" firstAttribute="leading" secondItem="YPZ-0g-aFy" secondAttribute="leading" constant="16" id="57N-HZ-vRz"/>
+                    <constraint firstItem="qr1-iA-Bx5" firstAttribute="top" secondItem="YPZ-0g-aFy" secondAttribute="top" constant="16" id="AOh-dr-LQs"/>
+                    <constraint firstAttribute="trailing" secondItem="qr1-iA-Bx5" secondAttribute="trailing" constant="16" id="F92-ub-hdw"/>
+                    <constraint firstItem="Acg-Iv-Jqf" firstAttribute="top" secondItem="qr1-iA-Bx5" secondAttribute="bottom" constant="8" id="LxU-UZ-J0o"/>
+                    <constraint firstAttribute="trailing" secondItem="E25-DF-d45" secondAttribute="trailing" constant="16" id="MqL-48-K8j"/>
+                    <constraint firstAttribute="bottom" secondItem="E25-DF-d45" secondAttribute="bottom" constant="11.5" id="OQ4-J7-XCT"/>
+                    <constraint firstItem="E25-DF-d45" firstAttribute="leading" secondItem="YPZ-0g-aFy" secondAttribute="leading" constant="16" id="dkb-g4-QFG"/>
+                    <constraint firstItem="qr1-iA-Bx5" firstAttribute="leading" secondItem="YPZ-0g-aFy" secondAttribute="leading" constant="16" id="fND-sk-2Ja"/>
+                    <constraint firstItem="E25-DF-d45" firstAttribute="top" secondItem="Acg-Iv-Jqf" secondAttribute="bottom" constant="8" id="vec-Q8-3BD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="educationLabel" destination="Acg-Iv-Jqf" id="pE1-gn-DvU"/>
+                <outlet property="nameLabel" destination="qr1-iA-Bx5" id="dUr-hd-3aO"/>
+                <outlet property="temperamentLabel" destination="E25-DF-d45" id="twg-Mc-vNN"/>
+            </connections>
+            <point key="canvasLocation" x="-72" y="26"/>
+        </tableViewCell>
+    </objects>
+</document>
