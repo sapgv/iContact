@@ -32,7 +32,7 @@ class Contact: Object, Codable {
         return "id"
     }
     
-    private dynamic var privateTemperament: String = Temperament.melancholic.rawValue
+    @objc dynamic private var privateTemperament: String = Temperament.melancholic.rawValue
     var temperament: Temperament {
         get { return Temperament(rawValue: privateTemperament)! }
         set { privateTemperament = newValue.rawValue }
